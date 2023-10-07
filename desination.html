@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- website icon -->
+    <link rel="shortcut icon" href="./img/xlogo.png" type="image/x-icon.png">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Destination - Travelx</title>
+    <style>
+        nav ul li a::after {
+            content: "";
+            width: 0%;
+            height: 4px;
+            display: block;
+            background: rgb(2, 2, 2);
+        }
+
+        .hamburger {
+            cursor: pointer;
+
+        }
+
+        .hamburger .line1,
+        .hamburger .line2,
+        .hamburger .line3 {
+            border: 2px solid black;
+            width: 3rem;
+            margin-top: 0.6rem;
+            border-radius: 3rem;
+        }
+
+        .hamburger .line1 {
+            transform-origin: 0% 0%;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .hamburger .line2 {
+            transition: transform 0.4s ease-in-out
+        }
+
+        .hamburger .line3 {
+            transform-origin: 0% 100%;
+            transition: transform 0.4s ease-in-out
+        }
+
+        .line1.active {
+            transform: rotate(45deg);
+            border: 2px solid rgb(28, 89, 129);
+        }
+
+        .line2.active {
+            transform: scaleY(0);
+        }
+
+        .line3.active {
+            transform: rotate(-45deg);
+            border: 2px solid rgb(28, 89, 129);
+        }
+
+        @media(max-width:991px) {
+            .secheader-menu {
+                display: none;
+            }
+
+            .secheader-menu.active {
+                display: block;
+                width: 100%;
+                text-align: right;
+                /* transition: display 2s ease-in; */
+
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header style="height: auto;">
+        <div class="container">
+            <div class="row">
+                <div class="col navbar d-lg-flex align-items-center justify-content-between mt-3 ms-5 me-5 mb-3">
+                    <h1 class="h1 fw-bold text-dark">Travel<sub>X</sub></h1>
+                    <div class="hamburger d-block d-lg-none">
+                        <div class="line1 line"></div>
+                        <div class="line2 line"></div>
+                        <div class="line3 line"></div>
+                    </div>
+                    <nav class=" d-lg-block secheader-menu">
+                        <ul
+                            class="list-unstyled d-lg-flex align-items-center justify-content-between list-items me-lg-5 mt-4">
+                            <li class="me-lg-5"><a href="./index.html"
+                                    class="text-decoration-none fs-2 me-5 text-dark">Home</a></li>
+                            <!-- <li class="me-5"><a href="./desination.html"
+                                    class="text-decoration-none fs-2 me-5 text-dark">Destinations</a></li> -->
+
+                            <li class="me-lg-5"><a href="./about.html"
+                                    class="text-decoration-none fs-2 me-5 text-dark">About</a>
+                            </li>
+                            <li class="me-lg-5"><a href="./contactus.html"
+                                    class="text-decoration-none fs-2 me-lg-3 text-dark">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- slider -->
+    <div class="row">
+        <div class="col">
+            <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/offer-1.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/offer-2.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/offer-3.webp" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- find box -->
+    <div class="find-box d-flex align-items-center justify-content-between " style="background: rgb(28,89,129);">
+
+        <div class="find-box-1 p-3 ms-md-4 d-flex">
+            <div class="filterbox d-none d-md-block">
+                <img src="./img/filter.svg" alt="">
+            </div>
+            <div class="dropdown ms-md-4">
+                <button class="btn dropdown-toggle fs-2" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Price
+                </button>
+                <ul class="dropdown-menu price-menu" aria-labelledby="dropdownMenuButton1">
+                    <div class="dropdown-item">
+                        <input type="radio" name="selectprice" id="lessthan5000">
+                        <label for="lessthan5000" class="fs-3 ms-2">Less than ₹5000</label>
+                    </div>
+                    <div class="dropdown-item">
+                        <input type="radio" name="selectprice" id="fivetoten">
+                        <label for="fivetoten" class="fs-3 ms-2">₹5000 - ₹10,000</label>
+                    </div>
+                    <div class="dropdown-item">
+                        <input type="radio" name="selectprice" id="morethanten">
+                        <label for="morethanten" class="fs-3 ms-2">More than ₹10,000</label>
+                    </div>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="find-box-2 d-flex align-items-center me-md-5">
+            <div class="sortbox d-md-block">
+                <img src="./img/sort.svg" alt="">
+            </div>
+            <div class="dropdown ms-md-4">
+                <button class="btn dropdown-toggle fs-2" type="button" id="dropdownMenuButton3"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Sort By
+                </button>
+                <ul class="dropdown-menu price-menu p-2" aria-labelledby="dropdownMenuButton3">
+                    <div class="dropdown-item">
+                        <input type="radio" name="pricetype" id="ascendingPrice">
+                        <label for="ascendingPrice" class="fs-3 ms-2">Price Low to High</label>
+                    </div>
+                    <div class="dropdown-item">
+                        <input type="radio" name="pricetype" id="descendingPrice">
+                        <label for="descendingPrice" class="fs-3 ms-2">Price High to Low</label>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- desination places -->
+    <div class="container-fluid" style="background: rgb(244,244,244);">
+        <div class="row p-0">
+            <div class="col p-0">
+                <div class="places">
+                    <!-- place box start here -->
+                    <!-- place box end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- why us -->
+    <div class="row" style="background: rgb(243,183,88);">
+        <div class="col">
+            <div class="whyus d-md-flex align-items-center justify-content-center p-3 flex-wrap text-center">
+                <p class="fs-3 me-md-5 text-white ">1000+ Travellers </p>
+                <p class="fs-3 me-md-5 text-white ">100+ Trips</p>
+                <p class="fs-3 text-white">4.9 Google Rating</p>
+            </div>
+        </div>
+    </div>
+    <div class="row p-5" style="background: rgb(244,244,244);">
+        <div class="col text-center p-5">
+            <p class="h1 fw-bold text-capitalize">why us ?</p>
+        </div>
+        <div class="row">
+            <div class="cards-list d-flex align-items-center justify-content-center">
+                <div class="why-uscards d-flex align-items-center justify-content-center " style=" flex-wrap: wrap;">
+                    <div
+                        class="cardshow p-md-5 text-center d-flex align-items-center flex-column justify-content-center">
+                        <i class="fa-solid fa-location-dot m-md-3 why-us-icons"></i>
+                        <p class="fs-5">Location <br> Specific</p>
+                    </div>
+                    <div class="cardshow p-5 text-center d-flex align-items-center flex-column justify-content-center">
+                        <i class="fa-solid fa-star m-md-3 why-us-icons"></i>
+                        <p class="fs-5">Quality Assurance</p>
+                    </div>
+                    <div class="cardshow p-5 text-center d-flex align-items-center flex-column justify-content-center">
+                        <i class="fa-solid fa-phone m-md-3 why-us-icons"></i>
+                        <p class="fs-5">24x7 Support</p>
+                    </div>
+                    <div class="cardshow p-5 text-center d-flex align-items-center flex-column justify-content-center">
+                        <i class="fa-solid fa-money-bill m-md-3 why-us-icons"></i>
+                        <p class="fs-5">Secure Transaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <h1 class="h1">Travel<sub>X</sub></h1>
+                    <span class="fs-4 me-5">Ease</span> <span class="fs-4 me-5">Comfort</span> <span
+                        class="fs-4">Travel</span>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="h3">Popular Places</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html#ladakh" class="fs-4 text-decoration-none">Ladakh</a></li>
+                        <li><a href="./index.html#land" class="fs-4 text-decoration-none">Switzerland</a></li>
+                        <li><a href="./index.html#beach" class="fs-4 text-decoration-none">Beach of La Concha</a></li>
+                        <li><a href="./index.html#nepal" class="fs-4 text-decoration-none">Nepal</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="h3">About Travel<sub>X</sub></h3>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html" class="fs-4 text-decoration-none">Home</a></li>
+
+                        <li><a href="./desination.html" class="fs-4 text-decoration-none">Destination</a></li>
+
+                        <li><a href="./about.html" class="fs-4 text-decoration-none">About</a></li>
+                        <li><a href="./contactus.html" class="fs-4 text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="h3"><i class="fa-solid fa-envelope h3" style="color: #000000;"></i> Subscribe to Our News
+                        Letter</p>
+                    <form action="">
+                        <input type="email" name="" id="" class="w-100 fs-4 subscribe" required>
+                        <input type="submit" value="Subscribe" class="btn-primary btn mt-3 fs-5">
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center fs-5">
+                    © 2023 Copyright Travel<sub>X</sub>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let hamburger = document.querySelector('.hamburger')
+        let phoneMenu = document.querySelector('.secheader-menu')
+        let lin1 = document.querySelector('.line1')
+        let lin2 = document.querySelector('.line2')
+        let lin3 = document.querySelector('.line3')
+        hamburger.addEventListener('click', () => {
+            phoneMenu.classList.toggle('active');
+            lin1.classList.toggle('active')
+            lin2.classList.toggle('active')
+            lin3.classList.toggle('active')
+        })
+    </script>
+    <script src="destination.js"></script>
+</body>
+
+
+</html>

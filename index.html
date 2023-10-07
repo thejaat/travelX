@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- website icon -->
+<link rel="shortcut icon" href="./img/xlogo.png" type="image/x-icon.png">
+    <!-- bootstarp -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Travelx</title>
+    <style>
+         .hamburger{
+            cursor: pointer;
+         }
+        .hamburger .line1,.hamburger .line2,.hamburger .line3{
+         border: 2px solid white;
+          width: 3rem;
+         margin-top: 0.6rem;
+         border-radius: 3rem;
+        }
+        .hamburger .line1{
+            transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+        }
+        .hamburger .line2{
+            transition: transform 0.4s ease-in-out
+        }
+        .hamburger .line3{
+            transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out
+        }
+        .line1.active{
+            transform: rotate(45deg);
+        }
+        .line2.active{
+            transform: scaleY(0);
+        }
+        .line3.active{
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <header id="home">
+        <video src="./img/header.mp4" autoplay muted loop play-inline class="bgVedio"></video>
+        <div class="container">
+            <div class="row">
+                <div class="col navbar d-flex align-items-center justify-content-between mt-3 ms-5 me-5">
+                    <h1 class=" fw-bold companylogo order-2 order-lg-1">Travel<sub>X</sub></h1>
+                    <div class="hamburger d-block d-lg-none order-1 order-lg-2">
+                        <div class="line1 line"></div>
+                        <div class="line2 line"></div>
+                        <div class="line3 line"></div>
+                    </div>
+                    <nav class=" d-lg-block order-1 order-lg-2 header-menu">
+                        <ul
+                            class="list-unstyled d-block d-lg-flex align-items-center justify-content-between list-items me-5 mt-4">
+                            <!-- <li class="me-5"><a href="/" class="text-decoration-none fs-2 me-5 text-white">Home</a></li> -->
+                            <li class="me-5"><a href="./desination.html"
+                                    class="text-decoration-none fs-2 me-5 text-white">Destinations</a></li>
+                            <li class="me-5"><a href="./about.html"
+                                    class="text-decoration-none fs-2 me-5 text-white">About</a>
+                            </li>
+                            <li class="me-5"><a href="./contactus.html"
+                                    class="text-decoration-none fs-2 me-3 text-white">Contact
+                                    Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-content d-flex align-items-center justify-content-center">
+                <div class="header-text text-center pt-3 pb-3 ps-3 ps-md-5 pe-3 pe-md-5">
+                    <h2 class="display-2">Let's Explore This World</h2>
+                    <p class="fs-4 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
+                        nam cumque praesentium voluptates nisi recusandae consequatur distinctio, omnis quia
+                        dignissimos.</p>
+                    <a href="#places" class="btn btn-light fs-2">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="places" class="m-5">
+        <div class="container p-5">
+            <h1 class="mainheading m-5">Explore Places</h1>
+            <div class="row">
+                <div class="col">
+                    <!-- box1 -->
+                    <div class="box1 clearfix m-md-5 mb-3" id="land">
+                        <div class="imgbox">
+                            <img src="./img/switer1.jpg" alt="" class="w-100 h-100">
+                        </div>
+                        <div class="textbox p-md-5 pt-3">
+                            <h3 class="h1">Geneva, Switzerland</h3>
+                            <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, soluta?
+                                Deleniti
+                                libero corporis, amet laborum sed iure. Excepturi voluptas est nisi rerum odio
+                                veritatis? Qui minus explicabo quasi culpa, aliquam quo ipsa nisi possimus voluptate ab,
+                                nam optio? Laborum sunt perferendis facilis sequi tempora blanditiis ipsum atque
+                                delectus nemo dolor.</p>
+                            <a href="./desination.html" class="btn btn-primary fs-3">More</a>
+                        </div>
+                    </div>
+                    <!-- box2 -->
+                    <div class="box2 clearfix m-md-5 mb-3" id="ladakh">
+                        <div class="imgbox">
+                            <img src="./img/ladak1.jpg" alt="" class="w-100 h-100">
+                        </div>
+                        <div class="textbox p-md-5 pt-3">
+                            <h3 class="h1">Ladakh, India</h3>
+                            <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, soluta?
+                                Deleniti
+                                libero corporis, amet laborum sed iure. Excepturi voluptas est nisi rerum odio
+                                veritatis? Qui minus explicabo quasi culpa, aliquam quo ipsa nisi possimus voluptate ab,
+                                nam optio? Laborum sunt perferendis facilis sequi tempora blanditiis ipsum atque
+                                delectus nemo dolor.</p>
+                            <a href="./desination.html" class="btn btn-primary fs-3">More</a>
+                        </div>
+                    </div>
+
+                    <div class="box1 clearfix m-md-5 mb-3" id="nepal">
+                        <div class="imgbox">
+                            <img src="./img/mountever.jpg" alt="" class="w-100 h-100">
+                        </div>
+                        <div class="textbox p-md-5 pt-3">
+                            <h3 class="h1">Nepal</h3>
+                            <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, soluta?
+                                Deleniti
+                                libero corporis, amet laborum sed iure. Excepturi voluptas est nisi rerum odio
+                                veritatis? Qui minus explicabo quasi culpa, aliquam quo ipsa nisi possimus voluptate ab,
+                                nam optio? Laborum sunt perferendis facilis sequi tempora blanditiis ipsum atque
+                                delectus nemo dolor.</p>
+                            <a href="./desination.html" class="btn btn-primary fs-3">More</a>
+                        </div>
+                    </div>
+                    <div class="box2 clearfix m-md-5 mb-3" id="beach">
+                        <div class="imgbox">
+                            <img src="./img/thai beach.jpg" alt="" class="w-100 h-100">
+                        </div>
+                        <div class="textbox p-md-5 pt-3">
+                            <h3 class="h1">Beach of La Concha</h3>
+                            <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, soluta?
+                                Deleniti
+                                libero corporis, amet laborum sed iure. Excepturi voluptas est nisi rerum odio
+                                veritatis? Qui minus explicabo quasi culpa, aliquam quo ipsa nisi possimus voluptate ab,
+                                nam optio? Laborum sunt perferendis facilis sequi tempora blanditiis ipsum atque
+                                delectus nemo dolor.</p>
+                            <a href="./desination.html" class="btn btn-primary fs-3">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <article>
+        <div class="row m-5">
+            <div class="col-md-8 review">
+                <h2 class="h1">Testimonials</h2>
+                <div class="emptybox"></div>
+                <p class="fs-5">
+                    Discover unforgettable travel experiences through Travel<sub>X</sub> Testimonials section. Read
+                    firsthand accounts from our satisfied customers, gaining confidence in our exceptional services. Let
+                    their stories ignite your wanderlust and inspire your next remarkable journey. Join us and create
+                    your own extraordinary memories.
+                </p>
+            </div>
+        </div>
+        <div class="row m-5">
+
+            <div class="col-12 col-lg-4 cards mb-3 m-auto">
+                <div class="cardimgbox"><img src="./img/custom1.jpg" alt=""> </div>
+                <div class="cardtextbox">
+                    <h1 class="h3">George</h1>
+                    <p class="fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, debitis!</p>
+                    <div class="emptybox"></div>
+                    <i class="fa-solid fa-star fs-3 yellowstar"></i>
+                    <i class="fa-solid fa-star fs-3 yellowstar"></i>
+                    <i class="fa-solid fa-star fs-3 yellowstar"></i>
+                    <i class="fa-solid fa-star fs-3 yellowstar"></i>
+                    <i class="fa-solid fa-star fs-3 yellowstar"></i>
+                    <p class="experience fs-3">Good Experience</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 cards mb-3 m-auto">
+                <div class="cardimgbox"><img src="./img/custom2.jpg" alt=""> </div>
+                <div class="cardtextbox">
+                    <h1 class="h3">Isabella</h1>
+                    <p class="fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, debitis!</p>
+                    <div class="emptybox"></div>
+                    <i class="fa-solid fa-star fs-3 yellowstar"></i>
+                    <i class="fa-solid fa-star fs-3 yellowstar"></i>
+                    <i class="fa-solid fa-star fs-3 yellowstar"></i>
+                    <i class="fa-solid fa-star fs-3 yellowstar"></i>
+                    <p class="experience fs-3">Adventurous</p>
+                </div>
+            </div>
+
+
+            <div class="col-12 cards mb-md-3 col-lg-4  m-auto">
+                <div class="cardimgbox"><img src="./img/custom3.jpg" alt=""> </div>
+                <div class="cardtextbox">
+                    <h1 class="h3">Lisa</h1>
+                    <p class="fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, debitis!</p>
+                    <div class="emptybox"></div>
+                    <i class="fa-solid fa-star fs-3 yellowstar"></i>
+                    <i class="fa-solid fa-star fs-3 yellowstar"></i>
+                    <i class="fa-solid fa-star fs-3 yellowstar"></i>
+                    <i class="fa-solid fa-star fs-3 yellowstar"></i>
+                    <i class="fa-solid fa-star-half yellowstar fs-3"></i>
+                    <p class="experience fs-3">Affordable</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <h1 class="h1">Travel<sub>X</sub></h1>
+                    <span class="fs-4 me-5">Ease</span> <span class="fs-4 me-5">Comfort</span> <span
+                        class="fs-4">Travel</span>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="h3">Popular Places</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#ladakh" class="fs-4 text-decoration-none">Ladakh</a></li>
+                        <li><a href="#land" class="fs-4 text-decoration-none">Switzerland</a></li>
+                        <li><a href="#beach" class="fs-4 text-decoration-none">Beach of La Concha</a></li>
+                        <li><a href="#nepal" class="fs-4 text-decoration-none">Nepal</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="h3">About Travel<sub>X</sub></h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="fs-4 text-decoration-none">Home</a></li>
+                        <li><a href="./desination.html" class="fs-4 text-decoration-none">Destination</a></li>
+                        <li><a href="./about.html" class="fs-4 text-decoration-none">About</a></li>
+                        <li><a href="./contactus.html" class="fs-4 text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="h3"><i class="fa-solid fa-envelope h3" style="color: #000000;"></i> Subscribe to Our News
+                        Letter</p>
+                    <form action="">
+                        <input type="email" name="" id="" class="w-100 fs-4 subscribe" required>
+                        <input type="submit" value="Subscribe" class="btn-primary btn mt-3 fs-5">
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center fs-5">
+                    © 2023 Copyright Travel<sub>X</sub>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script>
+    let hamburger = document.querySelector('.hamburger')
+    let phoneMenu = document.querySelector('.header-menu')
+    let lin1 = document.querySelector('.line1')
+    let lin2 = document.querySelector('.line2')
+    let lin3 = document.querySelector('.line3')
+    hamburger.addEventListener('click',()=>{
+phoneMenu.classList.toggle('active');
+lin1.classList.toggle('active')
+lin2.classList.toggle('active')
+lin3.classList.toggle('active')
+    })
+</script>
+</body>
+
+</html>

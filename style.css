@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&family=Poppins:wght@200;300;400;500;600;700;900&family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+  /* overflow-x: hidden; */
+  /* user-select: none; */
+}
+*::-webkit-scrollbar {
+  width: 0.31rem;
+  height: 0.1rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparents;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(28, 89, 129);
+  border-radius: 20rem;
+}
+
+/* utility class */
+.yellowstar {
+  color: yellow;
+}
+header {
+  color: white;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+header .bgVedio {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1000;
+  background-attachment: fixed;
+  /* for vedio */
+  object-fit: cover;
+}
+header .container {
+  z-index: 222;
+  background: transparent;
+}
+.companylogo{
+  font-size: 3.4rem;
+}
+.header-content {
+  margin-top: 20rem;
+}
+.header-text {
+  width: 75rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  display: block;
+  background: azure;
+}
+nav ul li a:hover::after {
+  transition: width 0.3s;
+  width: 100%;
+}
+/* main section */
+main .box1,
+main .box2 {
+  height: 35rem;
+}
+
+main .box1 .imgbox,
+main .box2 .textbox {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+main .box1 .textbox,
+main .box2 .imgbox {
+  float: right;
+  height: 100%;
+  width: 50%;
+}
+main .box1 .imgbox img,
+main .box2 .imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .mainheading::after {
+  content: "";
+  width: 20%;
+  height: 5px;
+  display: block;
+  margin-top: 1rem;
+  background: rgb(70, 174, 190);
+}
+/* reviw styling */
+article .cards {
+  position: relative;
+}
+article .cards .emptybox {
+  height: 1px;
+  background: black;
+  margin: 1.2rem;
+}
+.cards .cardimgbox img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  object-fit: cover;
+}
+.cards .cardtextbox {
+  background: #cdcdcda0;
+  padding: 2rem 2rem 2rem 6rem;
+  margin-left: 10rem;
+  border-radius: 4rem;
+}
+
+.review .emptybox {
+  height: 1px;
+  width: 20%;
+  background: rgb(70, 174, 190);
+  margin: 1.2rem;
+}
+/* destination */
+/* nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  display: block;
+  background: rgb(2, 2, 2);
+} */
+.price-menu.active {
+  display: block;
+}
+#dropdownMenuButton1,
+#dropdownMenuButton2,
+#dropdownMenuButton3 {
+  background: rgb(28, 89, 129);
+  color: aliceblue;
+}
+.places {
+  display: grid;
+  /* margin: auto; */
+  padding: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.place {
+  height: 100%;
+
+  margin: auto;
+}
+.why-uscards {
+  gap: 3rem;
+}
+.cardshow {
+  height: 23rem;
+  background: white;
+  width: 25rem;
+}
+
+.why-us-icons {
+  color: #f6a92c;
+  font-size: 7rem;
+}
+
+.places {
+  gap: 5rem;
+}
+
+.place {
+  position: relative;
+  width: min(350px, 95%) !important;
+  background: white;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.offer {
+  position: absolute;
+  top: 30%;
+  left: unset;
+  right: -2%;
+}
+
+.offer-price {
+  position: absolute;
+  top: 34%;
+  left: unset;
+  right: 3%;
+  color: aliceblue;
+}
+
+.trip-price {
+  position: relative;
+}
+
+.trip-price-text {
+  position: absolute;
+  top: 5%;
+  color: white;
+  left: 35%;
+}
+
+.duration {
+  position: absolute;
+  top: 33%;
+  left: 6%;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+/* contact us  */
+.contactexecuivelogo {
+  height: 40rem;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram,
+.fa-tiktok,
+.fa-youtube,
+.fa-paper-plane {
+  font-size: 4rem;
+}
+/* about */
+.fa-users,
+.fa-earth-americas,
+.fa-face-smile,
+.fa-star {
+  font-size: 6rem;
+}
+
+@media (max-width: 991px) {
+  * {
+    font-size: 50%;
+  }
+  .companylogo{
+    margin-top: 1rem;
+    font-size: 3.4rem;
+  }
+  .header-menu{
+     position: absolute;
+    top: 70%; 
+  transform: translateX(-150%);
+  transition: transform 0.3s ease-in;
+  margin-top: 1rem;
+  /* background: white; */
+  }
+  .header-menu.active{
+    transform: translateX(0%);
+  }
+
+  main .box1,
+  main .box2 {
+    height: auto;
+  }
+  main .box1 .imgbox,
+  main .box2 .textbox {
+    float: none;
+    display: block;
+    width: 100%;
+    height: 50%;
+  }
+  main .box1 .textbox,
+  main .box2 .imgbox {
+    float: none;
+    display: block;
+    height: 50%;
+    width: 100%;
+  }
+
+  .cards .cardimgbox img {
+    height: 6rem;
+    width: 6rem;
+    top: 1rem;
+  }
+  .cards .cardtextbox {
+    padding: 2rem 2rem 2rem 2rem;
+    margin-left: 5rem;
+  }
+  .cardshow {
+    height: 10rem;
+    background: white;
+    width: 12rem;
+  }
+
+  .why-us-icons {
+    font-size: 2rem;
+  }
+
+  .places {
+    display: block;
+    gap: 5rem;
+  }
+
+  .place {
+    max-width: 100% !important;
+    margin-top: 2rem;
+  }
+  /* contact us */
+  .contactexecuivelogo {
+    height: 25rem;
+  }
+  .fa-facebook,
+  .fa-twitter,
+  .fa-instagram,
+  .fa-tiktok,
+  .fa-youtube,
+  .fa-paper-plane {
+    font-size: 2rem;
+  }
+  /* about */
+  .fa-users,
+  .fa-earth-americas,
+  .fa-face-smile,
+  .fa-star {
+    font-size: 3rem;
+  }
+}

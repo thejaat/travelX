@@ -1,0 +1,89 @@
+[
+    {
+        "img":"https://travezco-bucket.s3.amazonaws.com/Trips/Trip/primaryImage/Udaipur_1_yoevl97c.webp",
+        "tripStartLocation":"Delhi",
+        "tripEndLocation":"Udaipur",
+        "tripPoint1":"Fateh ssagr lake",
+        "tripPoint2":"kumbalgarh fort",
+        "tripPoint3":"city place",
+        "departureDate":"06 oct 2023",
+        "totalPrice":10000
+        ,"offerPrice":8000,
+        "off":"20%",
+        "duration":"2N/3D"
+
+    },
+    
+    {
+        "img":"https://travezco-bucket.s3.amazonaws.com/Trips/Trip/primaryImage/Spiti_1_nf9r7xyg.webp",
+        "tripStartLocation":"Delhi",
+        "tripEndLocation":"spiti valley",
+        "tripPoint1":"sonmarg",
+        "tripPoint2":"gulmarg",
+        "tripPoint3":"pahalgam",      
+          "departureDate":"28 oct 2023",
+        "totalPrice":24000
+        ,"offerPrice":20000,
+        "off":"16%",
+        "duration":"6N/7D"
+
+    },
+    {
+        "img":"https://travezco-bucket.s3.amazonaws.com/Trips/Trip/primaryImage/Kashmir_1_hx960rqr.webp",
+        "tripStartLocation":"Delhi",
+        "tripEndLocation":"kashmir",
+        "tripPoint1":"shimla",
+        "tripPoint2":"kalpa",
+        "tripPoint3":"kaza",
+                "departureDate":"dates not available",
+        "totalPrice":20000
+        ,"offerPrice":17500,
+        "off":"12%",
+        "duration":"5N/6D"
+
+    },
+       
+    {
+        "img":"https://travezco-bucket.s3.amazonaws.com/Trips/Trip/primaryImage/Manali_1_nyumtv9h.webp",
+        "tripStartLocation":"Delhi",
+        "tripEndLocation":"Manali",
+        "tripPoint1":"manali",
+        "tripPoint2":"solang valley",
+        "tripPoint3":"kasol",      
+          "departureDate":"25 nov 2023",
+        "totalPrice":7350
+        ,"offerPrice":6000,
+        "off":"18%",
+        "duration":"2N/3D"
+
+    },
+    {
+        "img":"https://travezco-bucket.s3.amazonaws.com/Trips/Trip/primaryImage/Kasol_8.webp",
+        "tripStartLocation":"Delhi",
+        "tripEndLocation":"kasol",
+        "tripPoint1":"kasol",
+        "tripPoint2":"kutla",
+        "tripPoint3":"tosh",
+                "departureDate":"12 oct 2023",
+        "totalPrice":7500
+        ,"offerPrice":6000,
+        "off":"20%",
+        "duration":"2N/3D"
+
+    },
+    {
+        "img":"https://travezco-bucket.s3.amazonaws.com/Trips/Trip/primaryImage/Valley_Of_Flowers_1_x8kamytp.webp",
+        "tripStartLocation":"rishikesh",
+        "tripEndLocation":"valley of flowers",
+        "tripPoint1":"panchprayag",
+        "tripPoint2":"valley",
+        "tripPoint3":"hemkund sahib",
+                "departureDate":"december last",
+        "totalPrice":9500
+        ,"offerPrice":8200,
+        "off":"13%",
+        "duration":"5N/6D"
+
+    }
+  
+]

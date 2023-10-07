@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+           <!-- website icon -->
+<link rel="shortcut icon" href="./img/xlogo.png" type="image/x-icon.png">
+    <!-- bootstarp -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css">
+    <title>About Us - Travelx</title>
+
+    <style>
+        nav ul li a::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    display: block;
+    background: rgb(2, 2, 2);
+} 
+.hamburger {
+            cursor: pointer;
+
+        }
+
+        .hamburger .line1,
+        .hamburger .line2,
+        .hamburger .line3 {
+            border: 2px solid black;
+            width: 3rem;
+            margin-top: 0.6rem;
+            border-radius: 3rem;
+        }
+
+        .hamburger .line1 {
+            transform-origin: 0% 0%;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .hamburger .line2 {
+            transition: transform 0.4s ease-in-out
+        }
+
+        .hamburger .line3 {
+            transform-origin: 0% 100%;
+            transition: transform 0.4s ease-in-out
+        }
+
+        .line1.active {
+            transform: rotate(45deg);
+            border: 2px solid rgb(28, 89, 129);
+        }
+
+        .line2.active {
+            transform: scaleY(0);
+        }
+
+        .line3.active {
+            transform: rotate(-45deg);
+            border: 2px solid rgb(28, 89, 129);
+        }
+
+        @media(max-width:991px) {
+            .secheader-menu {
+                display: none;
+            }
+
+            .secheader-menu.active {
+                display: block;
+                width: 100%;
+                text-align: right;
+                /* transition: display 2s ease-in; */
+
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header style="height: auto;">
+        <div class="container">
+            <div class="row">
+                <div class="col navbar d-flex align-items-center justify-content-between mt-3 ms-5 me-5">
+                    <h1 class="h1 fw-bold text-dark">Travel<sub>X</sub></h1>
+                    <div class="hamburger d-block d-lg-none">
+                        <div class="line1 line"></div>
+                        <div class="line2 line"></div>
+                        <div class="line3 line"></div>
+                    </div>
+                    <nav class="secheader-menu d-lg-block">
+                        <ul
+                            class="list-unstyled d-lg-flex align-items-center justify-content-between list-items me-lg-5 mt-4">
+                            <li class="me-lg-5"><a href="./index.html"
+                                    class="text-decoration-none fs-2 me-5 text-dark">Home</a></li>
+                            <li class="me-lg-5"><a href="./desination.html"
+                                    class="text-decoration-none fs-2 me-5 text-dark">Destinations</a></li>
+
+                            <!-- <li class="me-lg-5"><a href="./about.html"
+                                    class="text-decoration-none fs-2 me-5 text-dark">About</a> -->
+                            </li>
+                            <li class="me-lg-5"><a href="./contactus.html" class="text-decoration-none fs-2 me-lg-3 text-dark">Contact
+                                    Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main style="background-color: rgb(249,244,240);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="./img/xlogo.png" alt="" style="height: 40rem; ">
+                </div>
+                <div class="col-lg-8 pt-5 pb-5">
+                    <h2>About Us</h2>
+                    
+                    <p class="fs-4">Travel<sub>X</sub> is an innovative online marketplace that revolutionizes the way people plan their trips. By partnering with location-specific travel agencies, we offer a simplified and hassle-free experience for our customers. These expert agencies provide us with their specialized itineraries, ensuring that we offer the best prices and services to our customers. <br><br>
+
+                        With our user-friendly platform, travelers can easily browse through a wide range of well-categorized trips and book their preferred itinerary in just a few clicks. <br><br>
+                        
+                        No more overwhelming planning or overthinking, just a seamless experience from start to finish.</p>
+                </div>
+            </div>
+
+            <div class="achievements">
+                <div class="row pb-5">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-users" ></i>
+                        <h2 class="h2 mt-3">1000+</h2>
+                        <p class="fs-5 mt-1">Travellers</p>
+                    </div>
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <h2 class="h2 mt-3">200+</h2>
+                        <p class="fs-5 mt-1">Places</p>
+                    </div>
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-face-smile" ></i>
+                        <h2 class="h2 mt-3">100+</h2>
+                        <p class="fs-5 mt-1">Trips</p>
+                    </div>
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-star" ></i>
+                        <h2 class="h2 mt-3">4.5+</h2>
+                        <p class="fs-5 mt-1">Google Rating</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+            
+    
+    </main>
+
+
+
+    <footer>
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <h1 class="h1">Travel<sub>X</sub></h1>
+                    <span class="fs-4 me-5">Ease</span> <span class="fs-4 me-5">Comfort</span> <span
+                        class="fs-4">Travel</span>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="h3">Popular Places</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html#ladakh" class="fs-4 text-decoration-none">Ladakh</a></li>
+                        <li><a href="./index.html#land" class="fs-4 text-decoration-none">Switzerland</a></li>
+                        <li><a href="./index.html#beach" class="fs-4 text-decoration-none">Beach of La Concha</a></li>
+                        <li><a href="./index.html#nepal" class="fs-4 text-decoration-none">Nepal</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="h3">About Travel<sub>X</sub></h3>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html" class="fs-4 text-decoration-none">Home</a></li>
+
+                        <li><a href="./desination.html" class="fs-4 text-decoration-none">Destination</a></li>
+
+                        <li><a href="./about.html" class="fs-4 text-decoration-none">About</a></li>
+                        <li><a href="./contactus.html" class="fs-4 text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="h3"><i class="fa-solid fa-envelope h3" style="color: #000000;"></i> Subscribe to Our News
+                        Letter</p>
+                    <form action="">
+                        <input type="email" name="" id="" class="w-100 fs-4 subscribe" required>
+                        <input type="submit" value="Subscribe" class="btn-primary btn mt-3 fs-5">
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center fs-5">
+                    © 2023 Copyright Travel<sub>X</sub>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let hamburger = document.querySelector('.hamburger')
+        let phoneMenu = document.querySelector('.secheader-menu')
+        let lin1 = document.querySelector('.line1')
+        let lin2 = document.querySelector('.line2')
+        let lin3 = document.querySelector('.line3')
+        hamburger.addEventListener('click', () => {
+            phoneMenu.classList.toggle('active');
+            lin1.classList.toggle('active')
+            lin2.classList.toggle('active')
+            lin3.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
